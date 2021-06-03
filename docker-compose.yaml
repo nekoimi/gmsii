@@ -1,0 +1,15 @@
+version: "3.6"
+services:
+  gmsii:
+    image: gmsii-build-example:latest
+    ports:
+      - "8000:8000"
+    networks:
+      - gmsii-bridge-net
+    volumes:
+      - ./config.json:/app/config.json
+    restart: always
+
+networks:
+  gmsii-bridge-net:
+    driver: bridge

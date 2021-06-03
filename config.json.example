@@ -1,0 +1,5 @@
+{
+  "debug": true,
+  "enable_heartbeat": true,
+  "bot_hook_key": "XXXXXXXXX"
+}
